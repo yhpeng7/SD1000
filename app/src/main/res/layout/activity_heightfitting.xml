@@ -1,0 +1,94 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="20dp" >
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 >
+
+                <TextView
+                    android:id="@+id/textView_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="30dp"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/checkBox_AutoHeightRevise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  高度拟合"
+                android:textSize="25dp" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/button_runperiodSubmit"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                android:background="@drawable/buttonbacksel"
+                android:text="确定" />
+
+            <Button
+                android:id="@+id/button_Cancel"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonbacksel"
+                android:text="取消"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableRow>
+
+
+</TableLayout>

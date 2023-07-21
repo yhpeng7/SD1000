@@ -1,0 +1,13 @@
+<resources>
+          <color name="front">#D1EEDC</color>
+          <color name="front1">#72D5E9</color>
+        <color name="back">#7EC6D2</color>
+        <color name="darkblue">#0078F0</color>
+        <color name="blue">#A5DAEF</color>
+        <color name="tlblue">#0000FF</color>
+        <color name="gray">#cccccc</color>
+        <color name="gray1">#cccccc</color>
+        <color name="gray2">#eeeeee</color>
+        <color name="white">#FFFFFF</color>
+</resources> 
+

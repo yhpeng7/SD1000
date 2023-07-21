@@ -1,0 +1,502 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:layout_height="wrap_content" 
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp">
+<TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="25dp" />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"    	
+        android:layout_marginTop="10dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                >
+
+                <TextView
+                    android:id="@+id/textViewERSTestTimeLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="血沉测试时间："
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_ERSTestTime_60min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60分钟"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_ERSTestTime_30min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30分钟"
+                    android:textSize="25dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewTransLab"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="数据传输设置："
+                    android:textSize="25dp" />
+                <RadioButton
+                    android:id="@+id/radioButton_UpSA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SA"
+                    android:textSize="25dp" />
+				<RadioButton
+                    android:id="@+id/radioButton_UpLIS_net"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIS(网口)"
+                    android:textSize="25dp" />
+                
+				<RadioButton
+                    android:id="@+id/radioButton_UpLIS_serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIS(串口)" 
+                    android:textSize="25dp"/>
+               <!--  <RadioButton
+                    android:id="@+id/radioButton_UpSAAuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动传至SA" 
+                    android:textSize="25dp"
+                    android:visibility="gone"/> -->
+
+              <!--   <RadioButton
+                    android:id="@+id/radioButton_UpLISAutoh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动传至LIS" 
+                    android:textSize="25dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton_UpSAAuhto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动传至SA" 
+                    android:textSize="25dp"/>   -->
+
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+    
+    
+   
+	<TableRow
+        android:id="@+id/tableRow13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" 
+        android:visibility="gone">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewTransLab1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="数据设置："
+                    android:visibility="invisible"
+                    android:textSize="25dp" />
+
+            <!--    <RadioButton
+                    android:id="@+id/radioButton_UpShA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传至SA"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_UpLIhS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传至LIS"
+                    android:textSize="25dp" />  -->
+ 				
+ 				 
+ 				<!-- <RadioButton
+                    android:id="@+id/radioButton_UpLIS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传至LIS"
+                    android:textSize="25dp" />
+                <RadioButton
+                    android:id="@+id/radioButton_UpLISAuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动传至LIS" 
+                    android:textSize="25dp"/> -->
+               
+             
+
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPrintSetLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="打印设置："
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_PrintSet_Chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有沉降曲线"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_PrintSet_NoChart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无沉降曲线"
+                    android:textSize="25dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+	<TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewSetNumLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="编号时间设置："
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_SetNum_Pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试前编号"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_SetNum_Finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试完成编号"
+                    android:textSize="25dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"  >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewAutoPrintLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动打印设置："
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_AutoPrint_AfterERS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="血沉完成后打印"
+                    android:textSize="25dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_AutoPrint_AfterHemat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="压积完成后打印"
+                    android:textSize="25dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+<TableRow
+        android:id="@+id/tableRow13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+               <TextView
+                    android:id="@+id/textViewInitialNumLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:text="默认起始编号:" />
+
+                <EditText
+                    android:id="@+id/EditText_InitialNum"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:numeric="integer"
+                    android:textSize="25dp"
+                    android:maxLength="5" />
+             
+
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/checkBox_TemRevise"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="温度拟合"                    
+                    android:textSize="25dp" />
+				<Button
+                    android:id="@+id/button_LISset"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="LIS传输"
+                    android:background="@drawable/buttonbacksel"
+                    android:textSize="20dp"/>
+                <Button
+                    android:id="@+id/button_Anticoa"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="抗凝剂" 
+                    android:background="@drawable/buttonbacksel"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/button_FanOpen"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                     android:textSize="20dp"
+                     android:background="@drawable/buttonbacksel"
+                    android:text="风扇开" />
+
+                <Button
+                    android:id="@+id/button_FanClose"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                     android:textSize="20dp"
+                     android:background="@drawable/buttonbacksel"
+                    android:text="风扇关" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/button_runperiodCancel"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/buttonbacksel"
+            android:text="耗材"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_Data"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_runperiodCancel"
+            android:text="温度"
+            android:background="@drawable/buttonbacksel"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_version"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_Data"
+            android:background="@drawable/buttonbacksel"
+            android:text="版本"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_ReTest"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_version"
+            android:background="@drawable/buttonbacksel"
+            android:text="调试"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_ReTest"
+            android:background="@drawable/buttonbacksel"
+            android:text="保存"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/buttonbacksel"
+            android:layout_toRightOf="@+id/button_save"
+            android:text="返回"
+            android:textSize="20dp" />
+    </RelativeLayout>    
+
+</TableLayout>

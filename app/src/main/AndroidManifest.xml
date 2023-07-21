@@ -1,24 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.sd1000application"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <!--这就是Android的版本号
+        *0.856.7525 加数据上传
+        *0.857.7531 修正没有血沉数据时 打印数据程序退出的Bug
+        *0.858.7534 添加TTYUSB*的读权限
+        *0.859.7538 添加TTYUSB*的读写权限为全部权限
+        *0.860.7572 压积计算高度改变，主界面布局调整  添加签名
+        *0.861.7720 增加SD100数据上传协议  其中超时等待时间为10s 序号长度去掉其中的字符后和28305比较 如果大于这个数就只取后四位 其中在设置界面里面的协议2就是指SD100的协议
+        *0.862.7720 修改手动编号的Bug而且 分开编号 修改查看界面
+         *0.863.7722 修正一天之内判断出错的Bug
+         *0.864.7731 去掉使用期限
 
+
+         *1.864.7844新版
+         *1.864.7853修改其他设置/复位高度修正不可设置的问题
+                            压积测试总次数
+                            查询结果显示单位
+                     查询结果触摸显示详细信息的参数单位
+                     曲线拟合
+                     样本容量不足‘超量图标修改
+                    SA上传崩溃
+                     扫描枪点亮几个全区
+                     自动编号格式根据用户输入确定
+                     调整设置页按钮大小
+                     密码输入（去掉默认及密码格式，明文显示密码）
+                     设置页、调试页设置控制
+                     运行周期、获取补偿、扫描全部添加等待对话框
+
+         *1.865.7853曲线半小时，拟合均用30分钟方式
+         *1.865.7873检测完成后扫码枪扫码编号
+         *1.865.7874检测完成后扫码枪扫码编号(屏蔽此功能)
+                    修改进入调试的“AM”指令
+         *1.865.7875 有血沉值压积结果合并到血沉（当天血沉）
+         *1.865.7876 抗凝剂设置小数点检测bug修改
+         *1.865.7876.1 修改画图从0点开始
+                       添加数据位置的显示
+         *1.865.7877 修改扫码和手动编号后，编码被清除的bug
+         *1.865.7877.1 修改扫码和手动编号后，编码被清除的bug——时间间隔计算错误
+         *1.865.7880 修改设置默认值
+                            修改测试的结果显示与数据库查询结果显示不一致
+                      温度拟合与测试完成时拟合温度一致
+         *1.865.7881 修改压积异常限制为1
+                                        压积异常在弹框中提示
+                                        修改重检无编号
+                                       导出添加拟合后的结果
+                                       曲线区分30分钟60分钟
+                    修改导出文件名称为：设备号+日期
+         1.865.7882  修改压积检测异常
+         1.865.7882.1  孔位编号独立清除
+         1.865.7884  修改60分钟测试30分钟停止的问题
+                     首页自检显示
+                     当天有血沉测试无压积测试方式下自动编号
+         1.865.7884.1数据查询出来打印曲线拟合60分钟改成30分的
+         1.865.7884.2自动编号从0001开始
+          1.865.7888 IC卡波特率改为19200
+          1.865.7888.1 风扇状态记录到数据库，开机同步到下位机
+          1.865.7889  调试模式进入调试发送指令
+          1.865.7895 修改"SD1000运行停止"的问题，数据库操作添加执行次数限制
+                     正在自检添加提示
+         1.865.7905 添加后扫码
+         1.865.7911修改按编号查询的确认插入还是修改功能的bug
+         1.865.7928添加语言设置
+                   修改测压积更新最新编号
+         1.865.7928.1微调LIS传输设置、 版本信息、语言设置界面
+          1.865.7933  注释调试打印信息
+          1.865.7935 入库按结果产生顺序进行
+          1.865.7942 手动编号血沉转到压积编号前加“0”，且与血沉不合并
+                    编号混乱问题
+                    屏蔽测试完成编号方式
+          1.865.7943 解决重新自检后编号混乱的问题
+                     高度不符合标准也参加自动编号
+          1.865.7943.1样本不足合并到样本超限
+          1.865.7946 电压比较值默认改为1000
+          1.865.7955 修改数据界面上传和测试完成上传bug
+          1.865.7961 英文版news tips改成Notice
+          1.865.7979 处理血沉测试结果小于1，大于160的情况
+          1.865.7982 添加测试区温度不在正常范围的开机提示
+          1.865.7996添加测试区温度不在正常范围开机提示的英文提示及修改部分英文翻译
+          1.865.8009添加返回按钮长按退出的bug
+          1.865.8023  修改数据查询血沉结果与打印结果有差异的问题（数据类型在计算过程中转换导致的误差）
+                                                       修改自动打印结果无拟合问题
+                                                       修改首页仪器名称英文名称
+          1.865.8028  60分钟测试结果与曲线均改为前30分钟的数值
+                                                添加测试区温度及原始数据记入数据库功能以便追踪测试区温度异常导致拟合异常的问题
+
+          1.865.8029   修改自动打印曲线拟合
+                                              添加测试过程中温度异常故障提示
+                                              将测试过程中测试区的五个温度及下位反馈的数值记入数据库，用以跟踪温度异常原因
+          1.865.8030  8029重新打包
+          1.865.8034  修改自动打印温度拟合温度参数传错的bug
+
+          1.865.8034.1  压积检测通道异常检测改为2
+
+          1.865.8042  添加自检完成后五个测试区温度异常的检测及报警功能
+                                                 修改数据查询界面“范围”选中不能将选择的范围内全部选中的问题
+          1.865.8042.1  添加自检完成后五个测试区温度异常的检测及报警的英文翻译
+          1.865.8044 修改自动打印逻辑及bug
+          1.865.8045 修改自动打印bug，及打印文字与曲线之间的间距
+          1.865.8079 修改测到标签和沉到底
+          1.865.8079.1 修改测到沉到底限制
+          1.865.8085 修改血沉结果<1的显示为1，>160的显示为160
+                                 温度修正加入结果，血沉结果修正，压积结果修正加入。
+               1.865.8086 修改查询结果显示，血沉结果<1的显示为1，>160的显示为160
+               1.865.8087添加自动上传到LIS
+               1.865.8088 修改上传到LIS总数太大是崩溃的问题，查询结果单位显示。
+               1.865.8088.1 修改测试结果和查询结果不一致问题，提前结束提示消息去掉“取消”按钮
+               1.865.8088.2修改打印与查询显示数据不一致问题（整数）
+               1.865.8089 修改测试最后高度未返回出结果的bug
+               1.865.8089.1测试终止条件由15改为11
+               1.865.8089.2自动上传到LIS精度bug
+               1.865.8092 统一精度控制
+               1.865.8242 在其他设置界面添加检测下限设置及保存到数据库，应血沉测试中样本下沉速度过快配合下位机取消测试终止指令
+                                           修改其他设置界面布局
+               1.865.8246 取消提前结束测试代码
+               1.865.8309 添加测试下限及精度翻译
+               1.865.8316修改测试完成后进入测试界面不可用孔位标识不显示的bug
+               1.865.8326添加存储的数据限制在30天内，超过30天的删除。
+               1.865.8340添加遗留翻译
+               1.865.8371修改二次进入数据查询页未查询前按上下页崩溃的问题
+               1.865.8548修改清除30天以前数据日期计算错误的bug(此bug会导致数据全部被删除)
+
+               1.866.8198 修改IC卡读卡器数据读取方式
+               1.866.8753添加SA上传端口检测功能
+               1.866.8789测试界面添加重测功能
+                                                 添加压积小于20的处理
+                                                 添加编号手动设置成功后界面对话框提示并关闭界面
+               1.866.8802 添加默认起始编号设置，修改对应的起始编号规则
+                                                  添加重测功能
+                                                  添加自动上传到SA的功能及设置（暂时屏蔽）
+               1.866.8803 修改编码规则，分离血沉和压积编号的相互关联
+
+                     8814 将自动上传到sa隐藏
+                     8842修改打印机打印半截的问题
+                     8857修改压积编码规则
+                     8981修改ＩＣ卡调试问题
+                     8982 1  上传方式  改为 1 SA  2 串口Lis  3网口lis
+                             2 编号重复同位置编1两次，测出结果为编号2
+                             3 打印机同一时间按编号顺序打印
+                 8983 数据显示 打印上传一致性问题
+                 8984 还原自动打印逻辑 修改两种LIS上传显示
+                 10078  添加耗材递减 逻辑及配置     添加lis上传曲线及配置
+                 8985  10078版添加英文翻译
+                 8986 修改主界面logo
+                 8987 修改主界面英文 logo
+                 8988 添加耗材初始化    改耗材递减为耗材封闭
+                 8989 调整调试字体
+                 8990 修改英文版“重测”“质控编号”
+                 8991 修改英文版“质控编号”编号错误的bug
+            -->
+    <!-- 文件操作权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!--uses-permission android:name="android.permission.REBOOT"/-->
+    <!-- uses-permission android:name="android.permission.SHUTDOWN"/-->
+    <!-- 网络操作权限 -->
+    <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31">
+        android:theme="@style/AppTheme" android:hasCode="true">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="com.example.sd1000application.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <receiver android:name=".BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.example.sd1000application.SetActivity"
+            android:label="系统设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ParaSetActivity"
+            android:label="设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ConsumeActivity"
+            android:label="耗材"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.TemperatureActivity"
+            android:label="当前温度"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.VersionActivity"
+            android:label="版本"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.SAPortTestActivity"
+            android:label="SA端口测试"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.MessageShowActivity"
+            android:label="等待..."
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.UpLoadLISSet"
+            android:label="LIS传输设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name="com.example.sd1000application.HeightReviseActivity"
+            android:label="高度拟合设置"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ScannerActivity"
+            android:label="扫描编号"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.DataTouchShowActivity"
+            android:label="结果显示"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.RunPeriodActivity"
+            android:label="运行周期设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.OtherSetActivity"
+            android:label="其它设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ComfirmDebugActivity"
+            android:label="调试密码"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ConfirmConsumeInitial"
+            android:label="耗材初始化密码"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.AnticoagulantsHeightActivity"
+            android:label="抗凝剂高度"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.LanguageActivity"
+            android:label="语言设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.ConsumeControlActivity"
+            android:label="耗材 递减设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.PasswordConfirmActivity"
+            android:label="语言设置密码确认"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.CurveActivity"
+            android:label="状态详情"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+
+        <activity
+            android:name="com.example.sd1000application.ReTestSetActivity"
+            android:label="重测设置"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" >
+
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.DebugActivity"
+            android:label="系统调试" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.TestUpActivity"
+            android:label="系统测试" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.TestDownActivity"
+            android:label="系统测试" >
+        </activity>
+        <activity
+            android:name="com.example.sd1000application.DataActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="数据" >
         </activity>
     </application>
 

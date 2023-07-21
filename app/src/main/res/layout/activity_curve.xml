@@ -1,0 +1,307 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="30dp">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="30dp">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp" >
+				<TableLayout >
+				    <TableRow >
+				        <TextView
+		                    android:id="@+id/textViewNumLab"
+		                    android:layout_width="200dp"
+		                    android:layout_height="wrap_content"
+		                    android:textSize="20dp"
+		                    android:text="标本号：" />
+						<!-- <Button
+		                    android:id="@+id/button_GetScanningSampleNum"
+		                    android:layout_width="100dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:textSize="20dp"
+		                    android:text="开始扫码" />
+						<Button
+		                    android:id="@+id/button_Submit_SampleNumReTest"
+		                    android:layout_width="100dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="20dp"
+		                    android:text="重测" /> -->
+				    </TableRow>
+				</TableLayout>
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"  >
+ 				<TableLayout >
+				    <TableRow >
+
+				        <EditText
+				            android:id="@+id/editText_SampleNum"
+				            android:layout_width="220dp"
+				            android:layout_height="65dp"
+				            android:ems="10"
+				            android:gravity="center"
+				            android:maxLength="13"
+				            android:numeric="integer" >
+
+				            <requestFocus />
+				        </EditText>
+       
+		                <Button
+		                    android:id="@+id/button_Submit_SampleNum"
+		                    android:layout_width="100dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/samplenumsubmitbutton"
+		                    android:layout_marginLeft="5dp"
+		                    android:text="" />
+						 <!-- <Button
+		                    android:id="@+id/button_Submit_SampleNumZhiKong"
+		                    android:layout_width="100dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="20dp"
+		                    android:text="质控编号" /> -->
+				    </TableRow>
+				</TableLayout>
+                
+
+               
+            </TableRow>
+			<TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"  >
+ 				<TableLayout >
+				    <TableRow >
+
+       				<Button
+		                    android:id="@+id/button_GetScanningSampleNums"
+		                    android:layout_width="102dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:textSize="20dp"
+		                    android:text="开始扫码" />
+						<Button
+		                    android:id="@+id/button_Submit_SampleNumReTest"
+		                    android:layout_width="102dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="20dp"
+		                    android:text="重测" />
+						 <Button
+		                    android:id="@+id/button_Submit_SampleNumZhiKong"
+		                    android:layout_width="102dp"
+		                    android:layout_height="60dp"
+		                    android:background="@drawable/buttonbacksel"
+		                    android:layout_marginLeft="10dp"
+		                    android:textSize="20dp"
+		                    android:text="质控编号" />
+				    </TableRow>
+				</TableLayout>
+                
+
+               
+            </TableRow>
+            
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+				<TableLayout >
+				    <TableRow >
+				        <TextView
+	                    android:id="@+id/textView_Result"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="20dp"
+	                    android:text="结果：" />
+				    </TableRow>
+				</TableLayout>
+                
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/tableRow14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textView_Address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="位置：  A4" />
+
+                        <TextView
+                            android:id="@+id/textView_Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:textSize="20dp"
+                            android:text="状态：  正在检测" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_Height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="高度： 57.0" 
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/textView_Process"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="进度：  2/30" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp">
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="310dp"
+                android:layout_height="400dp" >
+                <ImageView 
+			        android:id="@+id/CurveArea"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"			        
+			        android:layout_marginLeft="0dip"
+			        android:layout_marginRight="0dip"
+			        android:layout_marginTop="0dip"
+			        android:layout_marginBottom="0dip"	
+			        android:background="#00cccc"							        
+			        android:gravity="center_horizontal|center_vertical">
+			    </ImageView>
+            </TableRow>
+
+            
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button_Print"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:textSize="25dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="打   印" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button_UpLoad"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:textSize="25dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="上   传" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button_Delete"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:textSize="25dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="删   除" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/button_Back"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:textSize="25dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="返    回" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>

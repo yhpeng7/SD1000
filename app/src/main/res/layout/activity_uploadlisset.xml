@@ -1,0 +1,259 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp" >
+  <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" 
+                    android:textSize="20dp"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+    	android:layout_marginLeft="20dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewIPLab"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="IP地址：" />
+
+                <EditText
+                    android:id="@+id/editText_ip1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="number" >
+				
+                    <requestFocus />
+                </EditText>
+                <TextView
+                    android:id="@+id/textViewsoftwarelab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="." />
+				<EditText
+                    android:id="@+id/editText_ip2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="number" >				
+                </EditText>
+                <TextView
+                    android:id="@+id/textViewsoftwarelab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="." />
+                <EditText
+                    android:id="@+id/editText_ip3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="number" >				
+                </EditText>
+                <TextView
+                    android:id="@+id/textViewsoftwarelab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="." />
+                <EditText
+                    android:id="@+id/editText_ip4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="number" >				
+                </EditText>
+              
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPortLab"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="端口号：" />
+
+                <EditText
+                    android:id="@+id/editText_port"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:inputType="number" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewPortBrtLab"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="波特率" />
+
+                <EditText
+                    android:id="@+id/editText_brt"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:inputType="number" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewUplodLab"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="曲线上传" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonUpload"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNoUpload"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:textSize="25dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="100dp">
+
+                <Button
+                    android:id="@+id/button_submit"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="确定" />
+
+                <Button
+                    android:id="@+id/button_cancel"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="取消" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+  
+
+</TableLayout>

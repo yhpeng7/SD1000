@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="900dp"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+                 <ImageView 
+			        android:id="@+id/TestDownArea"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"			        
+			        android:layout_marginLeft="0dip"
+			        android:layout_marginRight="0dip"
+			        android:layout_marginTop="0dip"
+			        android:layout_marginBottom="0dip"	
+			        android:background="#00cccc"							        
+			        android:gravity="center_horizontal|center_vertical">
+			    </ImageView>	
+            </TableRow>
+
+            
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="150dp"
+            android:layout_height="fill_parent" >
+			<TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+                <Button
+                    android:id="@+id/button_PerPage"
+                    android:layout_width="150dp"
+                    android:layout_height="145dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="上    页" />
+            </TableRow>
+           
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                >
+
+                <Button
+                    android:id="@+id/button_ERSTest"
+                    android:layout_width="150dp"
+                    android:layout_height="145dp"
+                    android:textSize="30dp"
+                    android:text="血   沉                测   试" />
+
+            </TableRow>
+				
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:id="@+id/button_HematTest"
+                    android:layout_width="150dp"
+                    android:layout_height="145dp"
+                    android:textSize="30dp"
+                    android:text="压   积               测   试" />
+            </TableRow>
+ 			<TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="2dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button_ReTest"
+                    android:layout_width="150dp"
+                    android:layout_height="116dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/buttonbackupdown"
+                    android:text="重 测" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:id="@+id/button_Exit"
+                    android:layout_width="150dp"
+                    android:layout_height="145dp"
+                    android:textSize="30dp"
+                    android:background="@drawable/buttonbacksel"
+                    android:text="返    回" />
+            </TableRow>
+
+            
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>

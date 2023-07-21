@@ -1,0 +1,84 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:id="@+id/buttonOn"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbacksel"
+                    android:layout_marginLeft="30dp"
+                    android:text="开始" />
+				 <Button
+                    android:id="@+id/buttonOff"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbacksel"
+                    android:layout_marginLeft="10dp"
+                    android:text="停止" />
+				  <Button
+                    android:id="@+id/buttonClean"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbacksel"
+                    android:layout_marginLeft="10dp"
+                    android:text="清除" />
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+
+	<TableRow 
+            android:layout_weight="7"
+            android:layout_width="fill_parent" >
+           
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+	                 <ScrollView
+				        android:id="@+id/historyView"
+				        android:layout_width="fill_parent"
+				        android:layout_height="400dp"
+				        android:paddingLeft="30dp"
+				        android:paddingTop="1dp"
+				        android:paddingRight="1dp"
+				        android:paddingBottom="1dp"
+				        android:layout_marginTop="5dp"
+				        android:layout_marginBottom="10dp"
+				        android:scrollbars="vertical" >			
+					 		<TableLayout 
+					 		   android:id="@+id/historytable"
+					           android:layout_width="fill_parent"
+					           android:layout_height="350dp"
+					           android:paddingLeft="1dp"
+						       android:paddingTop="1dp"
+						       android:paddingRight="1dp"
+						       android:paddingBottom="1dp" > 		    
+					 		</TableLayout>
+				    </ScrollView>
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+</TableLayout>

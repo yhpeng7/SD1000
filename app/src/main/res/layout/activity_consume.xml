@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="680dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp" >
+
+    <TextView
+        android:id="@+id/textViewLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewsoftwarelab"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:text="名称            数量"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_HematNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_ERSNum"
+        android:layout_below="@+id/textView_ERSNum"
+        android:layout_marginTop="15dp"
+        android:text="压积试管      1000"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView_ERSNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLab"
+        android:layout_below="@+id/textViewLab"
+        android:layout_marginTop="15dp"
+        android:text="血沉试管      1000"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView_BatchNum"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_ERSNum"
+        android:layout_alignBottom="@+id/textView_ERSNum"
+        android:layout_alignLeft="@+id/textView_CardNum"
+        android:text="批号："
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView_Count"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_HematNum"
+        android:layout_alignBottom="@+id/textView_HematNum"
+        android:layout_alignLeft="@+id/textView_BatchNum"
+        android:text="数量:"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/button_Back"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button_Import"
+        android:layout_alignBottom="@+id/button_Import"
+        android:layout_toRightOf="@+id/button_Import"        
+        android:background="@drawable/buttonbacksel"
+        android:height="30dp"
+        android:text="返回"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/button_Import"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button_ReadICCard"
+        android:layout_alignBottom="@+id/button_ReadICCard"
+        android:layout_toRightOf="@+id/button_ReadICCard"
+        android:background="@drawable/buttonbacksel"
+        android:text="充值"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView_LastImportTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_ERSNum"
+        android:layout_alignTop="@+id/CreditCardProgressBar"
+        android:layout_toLeftOf="@+id/StatustextView"
+        android:text="上次充值日期：                                                       2014-01-01  10:00"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/button_ReadICCard"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/CreditCardProgressBar"
+        android:layout_below="@+id/textView_LastImportTime"
+        android:background="@drawable/buttonbacksel"
+        android:text="读卡"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/StatustextView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewLab"
+        android:layout_alignParentRight="true"
+        android:text="IC卡信息"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/textView_CardNum"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_ERSNum"
+        android:layout_alignParentRight="true"
+        android:text="卡号："
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/textView_EffTime"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_Count"
+        android:layout_marginTop="27dp"
+        android:text="有效期:"
+        android:textSize="10pt" />
+
+    <ProgressBar
+        android:id="@+id/CreditCardProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_EffTime"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewsoftwarelab"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="剩余耗材"
+        android:textSize="28dp" />
+
+</RelativeLayout>

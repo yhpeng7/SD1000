@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="fill_parent"
+    
+    android:layout_marginBottom="20dp" >
+
+  <!--   <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="26dp"
+        android:text="运行周期设置" /> -->
+
+    <Button
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_Title"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/right" />
+
+    <EditText
+        android:id="@+id/textViewLab"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/imageButtonAdd"
+        android:layout_toLeftOf="@+id/imageButtonAdd"
+        android:editable="false"
+        android:gravity="center"
+        android:text="30(s)"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/imageButtonPlus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/textViewLab"
+        android:layout_alignBottom="@+id/textViewLab"
+        android:layout_toLeftOf="@+id/textViewLab"
+        android:background="@drawable/left"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button_runperiodCancel"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/button_runperiodSubmit"
+        android:layout_alignBottom="@+id/button_runperiodSubmit"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonbacksel"
+        android:text="返回"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_runperiodSubmit"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView_Title"
+        android:layout_below="@+id/textViewLab"
+        android:background="@drawable/buttonbacksel"
+        android:text="确定"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonPlus"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="25dp" />
+
+</RelativeLayout>

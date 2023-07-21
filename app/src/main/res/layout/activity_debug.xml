@@ -1,0 +1,286 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="3dp"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+<TableRow 
+    android:orientation="horizontal">
+     <TableLayout
+        android:layout_width="650dp"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <ImageView 
+		        android:id="@+id/DebugArea"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        
+		        android:layout_marginLeft="0dip"
+		        android:layout_marginRight="0dip"
+		        android:layout_marginTop="0dip"
+		        android:layout_marginBottom="0dip"	
+		        android:background="#00cccc"							        
+		        android:gravity="center_horizontal|center_vertical">								        
+		    </ImageView>
+        </TableRow>
+
+        
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="fill_parent" 
+        android:layout_marginLeft="10dp">
+		<TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" >
+            <TableLayout
+		       android:layout_width="400dp"
+		       android:layout_height="fill_parent" 
+		       android:layout_marginLeft="10dp">
+		        <TableRow
+		            android:id="@+id/tableRow51"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp" >
+			        <Button 
+		                 android:id="@+id/LanguageButton"
+		                 android:layout_width="120dp"
+		                 android:layout_height="60dp"
+		                 android:text="语言设置"
+		                 android:gravity="center"                 
+		        		 android:background="@drawable/buttonbacksel"
+		                 android:textSize="7pt"/>
+		            <Button 
+		                 android:id="@+id/KaoJiButton"
+		                 android:layout_width="120dp"
+		                 android:layout_height="60dp"
+		                 android:text="拷机"
+		                 android:gravity="center"                 
+		        		 android:background="@drawable/buttonbacksel"
+		                 android:textSize="7pt"/>
+		             <Button 
+		                 android:id="@+id/ExitDebugButton"
+		                 android:layout_width="120dp"
+		                 android:layout_height="60dp"
+		                 android:text="退出调试"
+		                 android:gravity="center"
+		                 android:background="@drawable/buttonbacksel"
+				         android:textSize="7pt"/>	            
+		            
+		        </TableRow>
+		    </TableLayout>
+
+             
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"  >
+             
+            <TableLayout
+		       android:layout_width="400dp"
+		       android:layout_height="fill_parent" 
+		       android:layout_marginLeft="10dp">
+		        <TableRow
+		            android:id="@+id/tableRow52"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp" >
+		            <Button 
+		                 android:id="@+id/ScanAllButton"
+		                 android:layout_width="120dp"
+		                 android:layout_height="60dp"
+		                 android:text="扫描全部"
+		                 android:gravity="center"
+		                 android:background="@drawable/buttonbacksel"                 
+		                 android:textSize="7pt"/>
+		            <Button 
+		                android:id="@+id/GetRecompenseButton"
+		                android:layout_width="120dp"
+		                android:layout_height="60dp"
+		                android:text="获取补偿"
+		                android:background="@drawable/buttonbacksel"
+		                android:gravity="center"
+		                android:textSize="7pt"/>
+		            <Button 
+		                android:id="@+id/RunPeriodButton"
+		                android:layout_width="120dp"
+		                android:layout_height="60dp"
+		                android:background="@drawable/buttonbacksel"
+		                android:text="运行周期"
+		                android:gravity="center"
+		                android:textSize="7pt"/>		            
+		            
+		        </TableRow>
+		    </TableLayout>
+
+        </TableRow>
+ 		<TableRow 
+ 		    android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" >
+             
+ 		    <TableLayout
+		       android:layout_width="400dp"
+		       android:layout_height="fill_parent" 
+		       android:layout_marginLeft="10dp">
+		        <TableRow
+		            android:id="@+id/tableRow53"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp" >
+		            <Button
+		               android:id="@+id/UpButton"
+		               android:layout_width="120dp"
+		               android:background="@drawable/buttonbacksel"
+		               android:layout_height="60dp"
+		               android:text="上升"
+		                android:textSize="7pt"/>
+		             <Button
+		               android:id="@+id/PauseButton"
+		               android:layout_width="120dp"
+		               android:background="@drawable/buttonbacksel"
+		               android:layout_height="60dp"
+		               android:text="停止"
+		                android:textSize="7pt"/>
+		             <Button
+		               android:id="@+id/DownButton"
+		               android:layout_width="120dp"
+		               android:layout_height="60dp"
+		               android:background="@drawable/buttonbacksel"
+		               android:text="下降"
+		                android:textSize="7pt"/>		            
+		            
+		        </TableRow>
+		    </TableLayout>
+
+         </TableRow>
+         <TableRow 
+             android:layout_marginTop="30dp" >
+             <TableLayout
+		       android:layout_width="400dp"
+		       android:layout_height="fill_parent" 
+		       android:layout_marginLeft="10dp">
+		        <TableRow
+		            android:id="@+id/tableRow54"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp" >
+		           <Button 
+	                  android:id="@+id/PrintButton"
+	                  android:layout_width="120dp"
+	                  android:layout_height="60dp"
+	               	  android:background="@drawable/buttonbacksel"
+	                  android:textSize="7pt"
+	                  android:text="打印机"/>
+	               <Button 
+	                  android:id="@+id/CardButton"
+	                  android:layout_width="120dp"
+	                  android:background="@drawable/buttonbacksel"
+	                  android:layout_height="60dp"
+	                  android:textSize="7pt"
+	                  android:text="读卡器"/>
+				   <Button 
+	                  android:id="@+id/PWMButton"
+	                  android:layout_width="120dp"
+	                  android:layout_height="60dp"
+	                  android:textSize="7pt"
+	               	  android:background="@drawable/buttonbacksel"                  
+	                  android:text="蜂鸣器"/>
+		            
+		        </TableRow>
+		     </TableLayout>
+              
+          </TableRow>
+          <TableRow 
+              android:layout_marginTop="30dp" >
+				<TableLayout
+			       android:layout_width="400dp"
+			       android:layout_height="fill_parent" 
+			       android:layout_marginLeft="10dp">
+			        <TableRow
+			            android:id="@+id/tableRow55"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="0dp" >
+	               <Button 
+	                   android:id="@+id/HeightFitButton"
+	                   android:layout_width="120dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:layout_height="60dp"
+	                   android:textSize="7pt"
+	                   android:text="高度拟合"/>
+	              	            
+			       <Button 
+	                   android:id="@+id/ConsumerSetButton"
+	                   android:layout_width="120dp"
+	                   android:layout_height="60dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:textSize="7pt"
+	                   android:text="其他设置"/>
+			       <Button 
+	                   android:id="@+id/InitialConsumeButton"
+	                   android:layout_width="120dp"
+	                   android:layout_height="60dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:textSize="7pt"
+	                   android:text="耗材初始化"/>
+			        </TableRow>
+			    </TableLayout>
+
+           </TableRow>
+            <TableRow 
+              android:layout_marginTop="30dp" >
+               <TableLayout
+		       android:layout_width="400dp"
+		       android:layout_height="fill_parent" 
+		       android:layout_marginLeft="10dp">
+		        <TableRow
+		            android:id="@+id/tableRow56"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dp" >
+		            <Button 
+	                   android:id="@+id/SAPortButton"
+	                   android:layout_width="120dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:layout_height="60dp"
+	                   android:textSize="7pt"
+	                   android:text="SA端口测试"/>
+	                <Button 
+	                   android:id="@+id/OtherSetButton"
+	                   android:layout_width="120dp"
+	                   android:layout_height="60dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:textSize="7pt"
+	                   android:text="其他设置"/>
+	               <Button 
+	                   android:id="@+id/BackButton"
+	                   android:layout_width="120dp"
+	                   android:layout_height="60dp"
+	               	   android:background="@drawable/buttonbacksel"
+	                   android:textSize="7pt"
+	                   android:text="返回"/>	
+	               
+		            
+		        </TableRow>
+		      </TableLayout>
+              
+           </TableRow>
+    </TableLayout>
+</TableRow> 
+</TableLayout>
+
+   

@@ -1,0 +1,158 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="fill_parent" >
+	<TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" 
+       >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_Title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" 
+                    android:textSize="30dp"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+         android:layout_marginBottom="30dp"
+    	android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="30dp">
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/textView_SampleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="标本号：" />
+
+            </TableRow>
+			<TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/textView_TestTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="测试时间：" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"  >
+				<TextView
+                    android:id="@+id/textView_TestAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="测试位：" />   
+
+            </TableRow>
+ 			<TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"  >
+				<TextView
+                    android:id="@+id/textView_RESResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="血沉结果：" />   
+
+            </TableRow>
+            
+			<TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"  >
+				<TextView
+                    android:id="@+id/textView_HematResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="压积结果：" />   
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"  >
+				<TextView
+                    android:id="@+id/textView_Tem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="温度：" />   
+
+            </TableRow>
+           
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10dp">
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="310dp"
+                android:layout_height="400dp" >
+                <ImageView 
+			        android:id="@+id/CurveArea"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"			        
+			        android:layout_marginLeft="0dip"
+			        android:layout_marginRight="0dip"
+			        android:layout_marginTop="0dip"
+			        android:layout_marginBottom="0dip"	
+			        android:background="#00cccc"							        
+			        android:gravity="center_horizontal|center_vertical">
+			    </ImageView>
+            </TableRow>
+
+            
+        </TableLayout>
+
+        
+
+    </TableRow>
+
+    
+
+</TableLayout>
